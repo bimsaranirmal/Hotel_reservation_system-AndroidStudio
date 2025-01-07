@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_rooms"
+        android:icon="@drawable/cr"
+        android:title="Rooms" />
+    <item
+        android:id="@+id/nav_services"
+        android:icon="@drawable/smartphone"
+        android:title="Services" />
+    <item
+        android:id="@+id/nav_Bookings"
+        android:icon="@drawable/cb"
+        android:title="Bookings" />
+    <item
+        android:id="@+id/nav_Reservations"
+        android:icon="@drawable/cre"
+        android:title="Reservations" />
+    <item
+        android:id="@+id/nav_discounts"
+        android:icon="@drawable/cd"
+        android:title="Discounts" />
+    <!-- Attractions with subcategories -->
+    <item
+        android:id="@+id/nav_attractions"
+        android:enabled="false"
+        android:icon="@drawable/ca"
+        android:title="Attractions" />
+
+       <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_nearby_attractions"
+                android:title="          Nearby Attractions" />
+            <item
+                android:id="@+id/nav_offers"
+                android:title="          Exclusive Offers" />
+            <item
+                android:id="@+id/nav_events"
+                android:title="          Events" />
+           <item
+               android:id="@+id/nav_contact"
+               android:title="          Contact Us" />
+       </group>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/p"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_calender"
+        android:icon="@drawable/calendar"
+        android:title="Calender" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/lot"
+        android:title="Logout" />
+</menu>

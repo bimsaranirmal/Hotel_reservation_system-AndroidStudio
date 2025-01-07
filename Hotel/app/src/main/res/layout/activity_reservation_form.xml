@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"> <!-- Background color -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            app:icon="@drawable/backicon" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservation Form"
+            android:textColor="#4A4A4A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtServiceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service ID"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Name"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtServicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#4A4A4A"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTxtReservationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_background"
+        android:focusable="false"
+        android:hint="Reservation Date"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTxtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Time"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <EditText
+        android:id="@+id/editTxtParticipants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Number of Participants"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="#333333" />
+
+    <TextView
+        android:id="@+id/textTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: $0.00"
+        android:textColor="#D9534F"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonConfirmReservation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Confirm Reservation"
+        android:textColor="#0F0E0E" />
+</LinearLayout>

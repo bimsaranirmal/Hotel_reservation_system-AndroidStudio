@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Manage Rooms"
+            android:textColor="#FF9800"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtRoomID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Room ID"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#212121"
+            android:textColorHint="#817F7F" />
+
+        <EditText
+            android:id="@+id/txtRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Room Type"
+            android:padding="12dp"
+            android:textColor="#212121"
+            android:textColorHint="#817F7F" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Price per Night"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#212121"
+            android:textColorHint="#817F7F" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="#212121"
+            android:textColorHint="#817F7F" />
+
+        <Spinner
+            android:id="@+id/spinnerAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#0F0E0E" />
+
+        <ImageView
+            android:id="@+id/imgRoom"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/imageview_background" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF9800"
+            android:onClick="selectImage"
+            android:padding="12dp"
+            android:text="Select Image"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/select" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="insertRoom"
+                android:padding="12dp"
+                android:text="Insert"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/add" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="searchRoomById"
+                android:padding="12dp"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/search" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="updateRoom"
+                android:padding="12dp"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/update" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="deleteRoom"
+                android:padding="12dp"
+                android:text="Delete"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/delete" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:onClick="clearFields"
+                android:padding="12dp"
+                android:text="Clear"
+                android:textColor="@android:color/white"
+                app:icon="@drawable/clear" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+<com.google.android.material.navigation.NavigationView
+android:id="@+id/nav_view"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:headerLayout="@layout/nav_header"
+app:menu="@menu/nav_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

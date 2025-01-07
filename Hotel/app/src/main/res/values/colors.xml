@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Primary color -->
+    <color name="colorGray">#B0BEC5</color>   <!-- Gray color for stroke -->
+    <color name="primaryColor">#6200EA</color> <!-- Deep purple -->
+    <color name="secondaryColor">#03DAC5</color> <!-- Teal -->
+    <color name="backgroundColor">#F6F6F6</color> <!-- Light grey background -->
+    <color name="textColorPrimary">#333333</color> <!-- Dark grey text -->
+    <color name="hintColor">#757575</color> <!-- Medium grey for hints -->
+    <color name="buttonColor">#6200EA</color> <!-- Button color matching primary -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text for button -->
+
+</resources>
